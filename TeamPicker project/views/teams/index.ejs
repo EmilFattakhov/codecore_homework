@@ -1,0 +1,22 @@
+<%- include("../partials/header.ejs") %> 
+    <div>
+        <% for(let team of teams) { %>
+            <div>
+                    <ul>
+                        <li>
+                            <img src="<%= team.logoUrl %>" alt="">
+                        </li>
+                        <li>
+                            <h2> <%= team.name%> </h2>
+                        </li>
+                        <li>
+                            <textarea name="teams" id="teams"> <%= team.members %> </textarea>
+                        </li>
+                        <li>
+                            <button>Show cohort</button>
+                        </li>
+                    </ul>   
+            </div>
+        <% } %>
+    </div>
+<%- include("../partials/footer.ejs") %> 
