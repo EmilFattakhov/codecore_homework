@@ -1,0 +1,28 @@
+<%- include("../partials/header.ejs") %> 
+    <div>
+                <h5><%= team.name %> </h5>
+                <p>
+                    <div><%= team.members %> </div>
+                </p>
+                <hr>
+    </div>
+    <div>
+        <h3>Method</h3>
+        <form>
+            
+            <input type="radio" id="team_count" name="select" value="team_count">
+            <label for="team_count">Team Count</label><br>
+            <input type="radio" id="number_per_team" name="select" value="number_per_team">
+            <label for="number_per_team">Number Per Team</label><br>
+
+            <h3>Quantity</h3>
+            <input type="number" name="quantity">
+            <br>
+            <input type="submit" value="Assign Teams">
+        </form>  
+    </div>  
+    <% if (teams) { %> 
+        <p><%= teams %> </p>
+        <% } %> 
+   
+<%- include("../partials/footer.ejs") %> 

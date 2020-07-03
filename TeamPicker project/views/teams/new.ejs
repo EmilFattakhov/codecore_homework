@@ -1,0 +1,25 @@
+<%- include("../partials/header.ejs") %> 
+    <h1>New Cohort</h1>
+
+    <form action="/cohorts" method="POST">
+        <div>
+            <ul>
+                <li>
+                    <label for="logoUrl">Logo Url</label>
+                    <input type="text" name="logoUrl" placeholder="e.g. https://example.com/some.png">
+                </li>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Flying Funks">
+                </li>
+                <li>
+                    <label for="members">Members</label>
+                    <input type="textarea" name="members" placeholder="Jon Snow, Melisandre, Arya Stark">
+                </li>
+                <li>
+                    <input type="submit" value="Submit">
+                </li>
+            </ul>
+        </div>
+    </form>
+<%- include("../partials/footer.ejs") %> 

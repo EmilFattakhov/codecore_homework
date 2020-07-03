@@ -1,3 +1,16 @@
+// var fs = require('fs');
+
+// var csv = require('fast-csv'); 
+
+// fs.createReadStream('characters.csv')
+//     .on("data", function (data){
+//         console.log(data);
+//     })
+//     .on("end", function(data) {
+//         console.log("read finished");
+//     } )
+
+
 let names = process.argv; 
 let longest = 0; 
 
